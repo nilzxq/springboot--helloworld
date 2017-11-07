@@ -20,7 +20,12 @@ public class HelloController {
 		return "hello";
 	}
 	
-	public static void main(String[] args) {
-		SpringApplication.run(HelloController.class,args);
+//	public static void main(String[] args) {
+//		SpringApplication.run(HelloController.class,args);
+//	}
+	@RequestMapping("/test2")
+	public String test2() {
+		int i=1/0;
+		return "test2";
 	}
 }
